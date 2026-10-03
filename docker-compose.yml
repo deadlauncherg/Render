@@ -1,0 +1,11 @@
+services:
+  my-gotty:
+    hostname: mygotty
+    ports:
+      - "8989:8080"
+    image: lapio-plays:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    tty: true
+    stdin_open: true
